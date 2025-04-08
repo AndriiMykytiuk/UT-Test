@@ -73,11 +73,16 @@ def take_screenshot_on_finish(request, driver):
                 print(f"⚠️ Failed to take screenshot: {e}")
 
 
-def pytest_sessionstart(session):
+def pytest_configure(config):
     """
-    Automatically clears the Allure results directory at the start of the test session.
+    Safely clear the allure-results directory at the very start of pytest config stage.
+    This happens before Allure plugin starts writing to the folder.
     """
     results_dir = os.path.join(os.getcwd(), "allure-results")
     if os.path.exists(results_dir):
-        shutil.rmtree(results_dir)
-        print(f"🧹 Cleared previous Allure results from: {results_dir}")
+        try:
+            shutil.rmtree(results_dir)
+            print(f"🧹 Cleared previous Allure results from: {results_dir}")
+        except Exception as e:
+            print(f"⚠️ Could not clean allure-results directory: {e}")
+    os.makedirs(results_dir, exist_ok=True)
