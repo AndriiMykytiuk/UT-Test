@@ -1,0 +1,9 @@
+[00:06:30] INFO - Clicking element: ('accessibility id', 'Drag')
+[00:06:38] INFO - Clicked element: ('accessibility id', 'Drag')
+[00:06:38] INFO - Looking for element: ('xpath', '//android.view.ViewGroup[@content-desc="drag-l1"]/android.widget.ImageView')
+[00:06:38] INFO - Element found: ('xpath', '//android.view.ViewGroup[@content-desc="drag-l1"]/android.widget.ImageView')
+[00:06:38] INFO - Looking for element: ('xpath', '//android.view.ViewGroup[@content-desc="drop-l1"]/android.view.ViewGroup')
+[00:06:39] INFO - Element found: ('xpath', '//android.view.ViewGroup[@content-desc="drop-l1"]/android.view.ViewGroup')
+[00:06:40] INFO - Dragged from l1 to l1
+[00:06:40] INFO - Looking for element: ('xpath', '//android.view.ViewGroup[@content-desc="drop-l1"]/android.view.ViewGroup')
+[00:06:42] INFO - Element found: ('xpath', '//android.view.ViewGroup[@content-desc="drop-l1"]/android.view.ViewGroup')
