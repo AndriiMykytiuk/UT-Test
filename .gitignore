@@ -131,6 +131,7 @@ ENV/
 env.bak/
 venv.bak/
 apk/
+screenshots/
 
 # Spyder project settings
 .spyderproject
