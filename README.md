@@ -44,7 +44,7 @@ UT-Test/
 
 ### 1. Clone the repo:
 ```bash
-git clone https://github.com/your-user/UT-Test.git
+git clone https://github.com/AndriiMykytiuk/UT-Test.git
 cd UT-Test
 ```
 
@@ -103,7 +103,8 @@ allure serve allure-results
 ## ✅ ToDo List
 
 1. Add fixtures inside tests for shared setup
-2. Dockerize the project
+2. For Drag'n'Drop tests: add visual assertions
+3. Dockerize the project
 3. Set up BrowserStack execution (optional)
 4. Add report generation & publishing via GitHub Actions
 5. Optional: TestRail integration
